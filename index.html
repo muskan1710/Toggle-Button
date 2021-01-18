@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOGGLE BUTTON</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <div class="togglebtn" onclick="this.classList.toggle('active'); change();">
+                <div class="innercircle"></div>
+            </div>
+        </div>
+    </div>
+   <script>
+       function change(){
+           var count = 0;
+       var toggle = document.querySelector(".togglebtn");
+       var background = document.querySelector(".background");
+       background.classList.toggle('color');
+       }
+   </script>
+</body>
+</html>

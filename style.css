@@ -1,0 +1,55 @@
+:root {--background:lightblue}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.background{
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 1s;
+    background-color: lightblue;
+    /* background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/10c6ce99136197.5eebbea5e0b3d.png); */
+}
+.color{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: lightslategray;
+    /* background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/7df6b699526935.5ef4a3f5077b5.jpg); */
+}
+.togglebtn{
+    width: 80px;
+    height: 40px;
+    background-color: gray;
+    border-radius: 30px;
+    transition: all 300ms ease-in-out;
+}
+.togglebtn >.innercircle{
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: all 300ms ease-in-out;
+}
+.togglebtn.active{
+    background-color: #1f94c2;
+}
+.togglebtn.active >.innercircle{
+    margin-left: 40px;
+}
